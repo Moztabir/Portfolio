@@ -1,0 +1,374 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Projects Section */
+.projects {
+    padding: 40px;
+    background-color: #181818; /* Dark background */
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .projects h2 {
+    font-size: 2.5rem;
+    color: #ff00ff; /* Neon pink heading */
+    margin-bottom: 20px;
+  }
+  
+  /* Individual Project Item */
+  .project {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Start from left */
+    margin-bottom: 30px;
+    gap: 30px; /* Space between image and text */
+  }
+  
+  /* Project Image Container */
+  .project-image {
+    width: 150px;            /* Fixed width */
+    height: 150px;           /* Fixed height to match width */
+    border-radius: 50%;      /* Makes the container a circle */
+    overflow: hidden;        /* Hides overflow to maintain circle */
+    border: 5px solid #ff00ff; /* Neon pink border */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ensuring the Image Fills the Circle */
+  .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;       /* Keeps the image from stretching */
+  }
+  
+  /* Project Description Container */
+  .project-description {
+    flex: 1;                 /* Takes up remaining space */
+    text-align: left;        /* Align text to left */
+  }
+  
+  .project-description h3 {
+    font-size: 1.8rem;
+    color: #00bfff;          /* Neon blue */
+    margin-bottom: 10px;
+  }
+  
+  .project-description p {
+    color: #e0e0e0;          /* Light gray text */
+    font-size: 1rem;
+  }
+  
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for Cyberpunk feel */
+    color: #e0e0e0; /* Light gray text for readability */
+}
+
+/* Header Section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header .logo h1 {
+    font-size: 2.5rem;
+    color: #ff00ff; /* Neon pink for logo */
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #00bfff; /* Neon blue */
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+header nav ul li a:hover {
+    color: #ff00ff; /* Neon pink hover */
+}
+
+/* About Section */
+#about {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-top: 100px;
+    background: linear-gradient(135deg, #4b0082, #ff00ff); /* Purple to neon pink gradient */
+}
+
+.bio-container {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.bio-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #00bfff; /* Neon blue heading */
+}
+
+.bio-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.profile-photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff00ff; /* Neon pink border for the image */
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px;
+    background-color: #181818; /* Dark background for sections */
+    margin-top: 40px;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #ff00ff; /* Neon pink heading */
+    margin-bottom: 20px;
+}
+
+/* Project Items */
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.project-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-description h3 {
+    font-size: 1.5rem;
+    color: #00bfff; /* Neon blue */
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    color: #e0e0e0;
+}
+
+/* Social Media Section */
+.social-media {
+    position: fixed;
+    left: 0;
+    bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-media ul li {
+    margin: 10px 0;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: #00bfff; /* Neon blue links */
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-media ul li a:hover {
+    color: #ff00ff; /* Neon pink on hover */
+}
+
+/* Footer Section for Quote */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #181818; /* Dark footer */
+}
+
+footer blockquote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #00bfff; /* Neon blue quote */
+}
+
+footer cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #ff00ff; /* Neon pink for the citation */
+}
+
+/* Education Section */
+.education {
+    padding: 40px;
+    background-color: #181818; /* Dark background */
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    text-align: center; /* Center text */
+}
+
+.education h2 {
+    font-size: 2.5rem;
+    color: #ff00ff; /* Neon pink heading */
+    margin-bottom: 20px;
+}
+
+/* Education Timeline */
+.education-timeline {
+    position: relative;
+    width: 80%; /* Set the width of the timeline */
+    max-width: 900px; /* Max width to prevent it from stretching too much */
+    margin: 0 auto; /* Center the timeline horizontally */
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    justify-content: center; /* Center items horizontally */
+}
+
+.education-item .circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #ff00ff; /* Neon pink circle */
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.education-details {
+    padding-left: 30px;
+}
+
+.education-details h3 {
+    font-size: 1.8rem;
+    color: #00bfff; /* Neon blue */
+    margin-bottom: 10px;
+}
+
+.education-details p {
+    color: #e0e0e0; /* Light gray text */
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* --- Photography Section --- */
+.photography {
+    padding: 40px;
+    background: #181818;       /* Change to match your theme */
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .photography h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;            /* Adjust text color as needed */
+  }
+  
+  /* --- Photo Gallery Grid --- */
+  .photo-gallery {
+    /* Creates a responsive grid with min 250px columns */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    align-items: start;
+    max-width: 1200px;      /* Optional: limit the gallery width */
+    margin: 0 auto;         /* Center the gallery container */
+  }
+  
+  /* --- Individual Photo Card --- */
+  .photo-card {
+    background-color: #181818;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  /* Image styling: you can also use border-radius for arched corners */
+  .photo-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;     /* Slightly rounded corners */
+    margin-bottom: 15px;
+    object-fit: cover;      /* Ensures the image won't stretch */
+  }
+  
+  /* Title and Year text */
+  .photo-card h3 {
+    font-size: 1.2rem;
+    color: #333;            /* Adjust to your liking */
+    margin-bottom: 5px;
+  }
+  
+  .photo-card p {
+    font-size: 1rem;
+    color: #666;            /* Adjust to your liking */
+    margin-bottom: 0;
+  }
+  
+
+
